@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	.form{
+		display: inline-grid;
+		background-color:skyblue;
+		padding:50px;
+	}
+	.btn{
+		background-color:#0066ff;
+		padding:5px;
+		opacity:0.9;
+	}
+</style>
+
+</head>
+<body>
+	<script type="text/javascript">
+		function f1()
+		{
+			alert("input field lost focus");
+		}
+	</script>
+<center>
+	<h1>MY REGISTRATION FORM</h1>
+	<form  class="form" method="post" name="regis">
+		First name<input type="text" name="name" onblur="f1()" required>
+		Last name<input type="text" name="name" onblur="f1()" required>
+		Email<input type="text" name="text" required onblur="f1()">
+		Password<input type="password" name="pass" required onblur="f1()">
+		Phone no.<input type="contact" name="no" required onblur="f1()">
+		<br>
+		<button name="submit" class="btn">submit</button>
+	</form>
+</center>
+</body>
+</html>
